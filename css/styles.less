@@ -47,6 +47,12 @@ body{
     z-index:0;
 }
 
+
+.close {
+    color: @lt-gray; 
+    opacity: 1;
+}
+
 .navbar-inverse {
      background-color: @background-dark;
 }
@@ -61,14 +67,14 @@ body{
 .carousel{
     background: @background-dark;
 
-    .carousel-tem {
+    .carousel-item {
         height: @carousel-item-height;
 
         img{
             position: absolute;
             top: 0;
             left: 0;
-            min-height: 300px;
+            min-height: @carousel-item-height;
         }
     }
 }
@@ -77,4 +83,19 @@ body{
     right: 0px;
     position: absolute;
     bottom: 0px;
+}
+
+.modal-header{
+    background-color: @background-dark;
+}
+.modal-title{
+    color:@lt-gray;
+}
+
+.modal-body{
+    background-color: @background-pale;
+}
+
+.modal-footer{
+    background-color: @background-light;
 }
